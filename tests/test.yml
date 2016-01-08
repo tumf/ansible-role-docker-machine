@@ -1,0 +1,9 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  tags:
+    - install
+  roles:
+    - role: ../..
+  tasks:
+    - debug: msg="The test case is succeeded."
