@@ -5,6 +5,6 @@
     - install
   roles:
     - role: ../..
-      docker_machine_url: https://gist.githubusercontent.com/tumf/579c84e276b6d2d88e09/raw
+      docker_machine_release_url: https://gist.githubusercontent.com/tumf/579c84e276b6d2d88e09/raw
   tasks:
     - debug: msg="The test case is succeeded."
