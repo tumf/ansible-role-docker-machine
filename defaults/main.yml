@@ -2,4 +2,4 @@
 # defaults file for ansible-role-docker-machine
 ansible_unit_test_prefix_dir: ""
 ansible_unit_test: false
-docker_machine_url: https://github.com/docker/machine/releases/download/v0.5.5/docker-machine_linux-amd64
+docker_machine_release_url: https://github.com/docker/machine/releases/download/v0.5.5/docker-machine_linux-amd64

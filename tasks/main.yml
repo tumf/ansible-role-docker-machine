@@ -4,6 +4,6 @@
   file: path="{{ ansible_unit_test_prefix_dir }}/usr/local/bin" state=directory recurse=yes
 - name: Install Docker Machine
   get_url: >
-    url="{{ docker_machine_url }}"
+    url="{{ docker_machine_release_url }}"
     dest="{{ ansible_unit_test_prefix_dir }}/usr/local/bin/docker-machine"
     mode="755"
