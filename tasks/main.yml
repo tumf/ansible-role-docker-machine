@@ -1,2 +1,9 @@
 ---
 # tasks file for ansible-role-docker-machine
+- name: Create Install Directory
+  file: path="{{ ansible_unit_test_prefix_dir }}/usr/local/bin" state=directory recurse=yes
+- name: Install Docker Machine
+  get_url: >
+    url="https://github.com/docker/machine/releases/download/v0.5.5/docker-machine_linux-amd64"
+    dest="{{ ansible_unit_test_prefix_dir }}/usr/local/bin/docker-machine"
+    mode="755"
